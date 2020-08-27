@@ -9,21 +9,10 @@ export default function Home(props) {
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
         <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-
       </Head>
 
       <main className={styles.main}>
         <h1>Next.js!</h1>
-        <div>
-          <Link href={{ pathname:"/about", query : {tableNumber:24} }}>
-            <a>About me</a>
-          </Link>
-        </div>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
         <p>
           Name : {props.data.name}
         </p>
