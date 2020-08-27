@@ -1,5 +1,6 @@
 backend:
-  name: master
+  name: git-gateway
+  branch: master
 
 media_folder: public/img
 public_folder: img
