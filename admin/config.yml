@@ -6,7 +6,8 @@ backend:
 media_folder: "public/img"
 public_folder: "/img"
 
-site_url: https://damongolding.github.io/next/
+site_domain : 35f0dd28add549b225e2
+base_url : https://api.netlify.com
 
 show_preview_links: false
 
