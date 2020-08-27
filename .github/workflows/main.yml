@@ -8,17 +8,23 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-18.04
+    
+    strategy:
+      matrix:
+        node-version: [12.x] # Only run the 10.x build
+
     steps:
       - uses: actions/checkout@v2
+        name: Uses Node.js ${{ matrix.node-version }}
         with:
-          submodules: true  # Fetch Hugo themes (true OR recursive)
-          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+          node-version: ${{ matrix.node-version }}
+      - run : npm install -g yarn 
 
       - name: Build Next
         run: |
-          npm install
-          npm run build
-          npm run export
+          yarn install
+          yarn build
+          yarn export
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
