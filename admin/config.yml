@@ -6,7 +6,7 @@ backend:
 media_folder: "public/img"
 public_folder: "/img"
 
-site_domain : 35f0dd28add549b225e2
+site_domain : 2e327e60-5e53-40f6-8d7b-b64a561e7a65
 base_url : https://api.netlify.com
 
 show_preview_links: false
