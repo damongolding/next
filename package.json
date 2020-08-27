@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "axios": "^0.20.0",
-    "netlify-cms": "^2.10.55",
     "next": "9.5.2",
     "react": "16.13.1",
     "react-dom": "16.13.1"
