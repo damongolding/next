@@ -1,0 +1,16 @@
+backend:
+  name: test-repo
+
+media_folder: public/img
+public_folder: img
+
+collections:
+  - name: "Site" # Used in routes, e.g., /admin/collections/blog
+    label: "Site" # Used in the UI
+    files:
+      - label: "Home"
+        name : "Home"
+        file : "data/data.md"
+        fields: # The fields for each document, usually in front matter
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Name", name: "name", widget: "string"}
